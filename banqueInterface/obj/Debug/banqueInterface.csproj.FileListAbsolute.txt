@@ -1,0 +1,13 @@
+C:\Users\pc\Documents\pooa\appBanque\banqueInterface\bin\Debug\banqueInterface.exe.config
+C:\Users\pc\Documents\pooa\appBanque\banqueInterface\bin\Debug\banqueInterface.exe
+C:\Users\pc\Documents\pooa\appBanque\banqueInterface\bin\Debug\banqueInterface.pdb
+C:\Users\pc\Documents\pooa\appBanque\banqueInterface\bin\Debug\appBanque.dll
+C:\Users\pc\Documents\pooa\appBanque\banqueInterface\bin\Debug\appBanque.pdb
+C:\Users\pc\Documents\pooa\appBanque\banqueInterface\obj\Debug\banqueInterface.csproj.AssemblyReference.cache
+C:\Users\pc\Documents\pooa\appBanque\banqueInterface\obj\Debug\banqueInterface.csproj.SuggestedBindingRedirects.cache
+C:\Users\pc\Documents\pooa\appBanque\banqueInterface\obj\Debug\banqueInterface.Properties.Resources.resources
+C:\Users\pc\Documents\pooa\appBanque\banqueInterface\obj\Debug\banqueInterface.csproj.GenerateResource.cache
+C:\Users\pc\Documents\pooa\appBanque\banqueInterface\obj\Debug\banqueInterface.csproj.CoreCompileInputs.cache
+C:\Users\pc\Documents\pooa\appBanque\banqueInterface\obj\Debug\banqueInterface.csproj.CopyComplete
+C:\Users\pc\Documents\pooa\appBanque\banqueInterface\obj\Debug\banqueInterface.exe
+C:\Users\pc\Documents\pooa\appBanque\banqueInterface\obj\Debug\banqueInterface.pdb
