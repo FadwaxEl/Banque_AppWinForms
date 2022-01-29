@@ -22,6 +22,7 @@ namespace banqueInterface
 
             InitializeComponent();
             label4.Text = c1.afficher();
+            dataGridView1.Hide();
           /*  SqlDataReader reader = Selecte("select tauxinteret, valeurs from compte c join CompteEpargne ce on ce.idCompte=c.id "
                 + "join devise d on c.idDevise = d.id where c.idClient =" + c.id);
             if (reader.HasRows)
@@ -39,7 +40,7 @@ namespace banqueInterface
 
 
         }
-       
+
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox1.SelectedItem.ToString() == "Compte Epargne")
@@ -63,10 +64,14 @@ namespace banqueInterface
             }
             else if (comboBox1.SelectedItem.ToString() == "Compte Courant")
             {
-                SqlDataReader reader = Selecte("select tauxinteret, valeurs from compte c join CompteEpargne ce on ce.idCompte=c.id "
-                 + "join devise d on c.idDevise = d.id where c.idClient =" + c1.id);
+                /*select* from compte c join CompteCourant cc on cc.idCompte = c.id
+            join devise d on c.idDevise = d.id where idClient = 1
+            and cc.id not in (select IdCompteCr from ComptePayant);*/
+                SqlDataReader reader = Selecte("select decouvert, valeurs from compte c" +
+                    " join CompteCourant cc on cc.idCompte=c.id" +
+                   " join devise d on c.idDevise = d.id where idClient =" + c1.id +
+                   " and cc.id not in (select IdCompteCr from ComptePayant)");
                 if (reader.HasRows)
-
                 {
 
                     DataTable dt = new DataTable();
@@ -80,9 +85,31 @@ namespace banqueInterface
 
 
             }
+            else if (comboBox1.SelectedItem.ToString() == "Compte Payant")
+            {
+                /*select * from compte c join CompteCourant cc on c.id = cc.idCompte
+                   join comptePayant cp on cc.id = cp.IdCompteCr
+                   join devise d on c.idDevise = d.id where c.Id = 1
+                        }*/
+                SqlDataReader reader = Selecte("select decouvert, valeurs  from compte c join CompteCourant cc on c.id = cc.idCompte" +
+                   " join comptePayant cp on cc.id = cp.IdCompteCr " +
+                  " join devise d on c.idDevise = d.id where c.Id = " + c1.id);
+                if (reader.HasRows)
+                {
+
+                    DataTable dt = new DataTable();
+
+                    dt.Load(reader);
+
+                    dataGridView1.DataSource = dt;
+
+                }
+                dataGridView1.Show();
+
+            }
             else dataGridView1.Hide();
         }
-        public SqlDataReader Selecte(string commande)
+                public SqlDataReader Selecte(string commande)
         {
 
             if (connection.State != System.Data.ConnectionState.Open) connection.Open();
