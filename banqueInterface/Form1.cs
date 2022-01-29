@@ -30,7 +30,7 @@ namespace banqueInterface
 
      
 
-        private SqlDataReader Selecte(string commande)
+        public  SqlDataReader Selecte(string commande)
         {
 
             if (connection.State != System.Data.ConnectionState.Open) connection.Open();
@@ -104,7 +104,6 @@ namespace banqueInterface
         public  void comptes_cli(Client c)
         {
             List<CompteEpargne> comptes = new List<CompteEpargne>();
-
             /*string query = "select * from comptes c join CompteEpargnes ce on ce.idCompte=c.id " +
                 "join devises d on c.idDevise=d.id where c.idClient=" + id;*/
             /*string query2 = "select * from comptes c join ComptesCourant cc on cc.idCompte=c.id "+"" +
@@ -112,14 +111,11 @@ namespace banqueInterface
                 " and id not in (select idCourant from comptePayants)";
             string query3 = "select * from comptes c join ComptesCourant cc on c.id=cc.idCompte" +
                 "join comptePayants cp on cc.id=cp.idCourant join devises d on c.idDevise=d.id where id=" + id;*/
-
-
             SqlDataReader reader = Selecte("select * from compte c join CompteEpargne ce on ce.idCompte=c.id "
                 +"join devise d on c.idDevise = d.id where c.idClient =" + c.id);
             while (reader.Read())
             {
                // MessageBox.Show(reader.GetValue(7).ToString());
-
                 //int idDevice = int.Parse(reader["idDevice"].ToString());
                 double valeur = double.Parse(reader.GetValue(7).ToString());
                 Devise d = new Mad(c.id, valeur);

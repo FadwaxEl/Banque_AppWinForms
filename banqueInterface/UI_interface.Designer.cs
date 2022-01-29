@@ -29,14 +29,19 @@ namespace banqueInterface
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.compteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.DELETE = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Crediter = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.compteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -49,6 +54,15 @@ namespace banqueInterface
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(308, 450);
             this.panel1.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(169, 219);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 25);
+            this.label4.TabIndex = 4;
             // 
             // label2
             // 
@@ -63,6 +77,9 @@ namespace banqueInterface
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DELETE,
+            this.Crediter});
             this.dataGridView1.Location = new System.Drawing.Point(314, 94);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(475, 195);
@@ -90,14 +107,23 @@ namespace banqueInterface
             this.label1.TabIndex = 2;
             this.label1.Text = "Liste des Comptes";
             // 
-            // label4
+            // compteBindingSource
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(169, 219);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 25);
-            this.label4.TabIndex = 4;
+            this.compteBindingSource.DataSource = typeof(appBanque.Compte);
+            // 
+            // DELETE
+            // 
+            this.DELETE.HeaderText = "Delete";
+            this.DELETE.Name = "DELETE";
+            this.DELETE.Text = "Delete";
+            this.DELETE.UseColumnTextForButtonValue = true;
+            // 
+            // Crediter
+            // 
+            this.Crediter.HeaderText = "Crediter";
+            this.Crediter.Name = "Crediter";
+            this.Crediter.Text = "Crediter";
+            this.Crediter.UseColumnTextForButtonValue = true;
             // 
             // UI_interface
             // 
@@ -113,6 +139,7 @@ namespace banqueInterface
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.compteBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -125,5 +152,8 @@ namespace banqueInterface
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.BindingSource compteBindingSource;
+        private System.Windows.Forms.DataGridViewButtonColumn DELETE;
+        private System.Windows.Forms.DataGridViewButtonColumn Crediter;
     }
 }

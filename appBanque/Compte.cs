@@ -9,9 +9,9 @@ namespace appBanque
         {
             get; set;
          }
-        protected int id { get; set; }
-        protected List<Operation> operations = new List<Operation>();
-        private Devise solde { get; set; }
+       public int id { get; set; }
+        public List<Operation> operations = new List<Operation>();
+       public Devise solde { get; set; }
 
         public Compte(int id, Client client, Devise solde)
         {
