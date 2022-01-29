@@ -6,7 +6,6 @@ C:\Users\pc\Documents\pooa\appBanque\appBanque\obj\Debug\appBanque.dll
 C:\Users\pc\Documents\pooa\appBanque\appBanque\obj\Debug\appBanque.pdb
 C:\Users\admin\source\repos\GABProjet1\appBanque\appBanque\bin\Debug\appBanque.dll
 C:\Users\admin\source\repos\GABProjet1\appBanque\appBanque\bin\Debug\appBanque.pdb
-C:\Users\admin\source\repos\GABProjet1\appBanque\appBanque\obj\Debug\appBanque.csproj.AssemblyReference.cache
 C:\Users\admin\source\repos\GABProjet1\appBanque\appBanque\obj\Debug\appBanque.csproj.CoreCompileInputs.cache
 C:\Users\admin\source\repos\GABProjet1\appBanque\appBanque\obj\Debug\appBanque.dll
 C:\Users\admin\source\repos\GABProjet1\appBanque\appBanque\obj\Debug\appBanque.pdb

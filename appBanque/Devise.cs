@@ -1,20 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+
+
+using System;
 
 namespace appBanque
 {
     public abstract class Devise
     {
-        protected int id;
-        protected double value;
+        protected int id
+        {
+            get; set;
+         }
+        protected double value { get; set; }
 
-        public Devise(int id,double value)
+        public Devise(int id, double value)
         {
             this.id = id;
             this.value = value;
+        }
+        public string afficher()
+            {
+            string r = "";
+            r += this.value;
+            //Console.WriteLine(this.value);
+            return r;
         }
     }
 }

@@ -16,10 +16,12 @@ C:\Users\admin\source\repos\GABProjet1\appBanque\banqueInterface\bin\Debug\banqu
 C:\Users\admin\source\repos\GABProjet1\appBanque\banqueInterface\bin\Debug\banqueInterface.pdb
 C:\Users\admin\source\repos\GABProjet1\appBanque\banqueInterface\bin\Debug\appBanque.dll
 C:\Users\admin\source\repos\GABProjet1\appBanque\banqueInterface\bin\Debug\appBanque.pdb
-C:\Users\admin\source\repos\GABProjet1\appBanque\banqueInterface\obj\Debug\banqueInterface.csproj.AssemblyReference.cache
 C:\Users\admin\source\repos\GABProjet1\appBanque\banqueInterface\obj\Debug\banqueInterface.Properties.Resources.resources
 C:\Users\admin\source\repos\GABProjet1\appBanque\banqueInterface\obj\Debug\banqueInterface.csproj.GenerateResource.cache
 C:\Users\admin\source\repos\GABProjet1\appBanque\banqueInterface\obj\Debug\banqueInterface.csproj.CoreCompileInputs.cache
 C:\Users\admin\source\repos\GABProjet1\appBanque\banqueInterface\obj\Debug\banqueInterface.csproj.CopyComplete
 C:\Users\admin\source\repos\GABProjet1\appBanque\banqueInterface\obj\Debug\banqueInterface.exe
 C:\Users\admin\source\repos\GABProjet1\appBanque\banqueInterface\obj\Debug\banqueInterface.pdb
+C:\Users\admin\source\repos\GABProjet1\appBanque\banqueInterface\obj\Debug\banqueInterface.Form1.resources
+C:\Users\admin\source\repos\GABProjet1\appBanque\banqueInterface\obj\Debug\banqueInterface.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\GABProjet1\appBanque\banqueInterface\obj\Debug\banqueInterface.UI_interface.resources

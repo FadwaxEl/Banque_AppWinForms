@@ -41,9 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Devise.cs" />
-    <Compile Include="Compte.cs" />
     <Compile Include="Client.cs" />
+    <Compile Include="Compte.cs" />
+    <Compile Include="CompteCourant.cs" />
+    <Compile Include="CompteEpargne.cs" />
+    <Compile Include="ComptePayant.cs" />
+    <Compile Include="DataHendler.cs" />
+    <Compile Include="Devise.cs" />
+    <Compile Include="Mad.cs" />
     <Compile Include="Operation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

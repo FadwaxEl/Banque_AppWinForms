@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace appBanque
+﻿namespace appBanque
 {
-    internal class Mad
+    public class Mad : Devise
     {
+        public Mad(int id, double valeur) : base(id, valeur)
+        {
+
+        }
     }
 }

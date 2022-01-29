@@ -35,6 +35,7 @@ namespace banqueInterface
             this.login_btn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,6 +87,7 @@ namespace banqueInterface
             this.login_btn.Size = new System.Drawing.Size(54, 50);
             this.login_btn.TabIndex = 11;
             this.login_btn.UseVisualStyleBackColor = false;
+            this.login_btn.Click += new System.EventHandler(this.login_btn_Click_1);
             // 
             // panel1
             // 
@@ -107,12 +109,23 @@ namespace banqueInterface
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(385, 285);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(709, 449);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.password);
@@ -136,6 +149,7 @@ namespace banqueInterface
         private System.Windows.Forms.Button login_btn;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
 
