@@ -36,6 +36,7 @@
     <Reference Include="appBanque">
       <HintPath>..\appBanque\bin\Debug\appBanque.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

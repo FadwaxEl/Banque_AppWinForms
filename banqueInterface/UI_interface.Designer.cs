@@ -34,11 +34,11 @@ namespace banqueInterface
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DELETE = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Crediter = new System.Windows.Forms.DataGridViewButtonColumn();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.compteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.DELETE = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Crediter = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.compteBindingSource)).BeginInit();
@@ -84,14 +84,29 @@ namespace banqueInterface
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(475, 195);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // DELETE
+            // 
+            this.DELETE.HeaderText = "Delete";
+            this.DELETE.Name = "DELETE";
+            this.DELETE.Text = "Delete";
+            this.DELETE.UseColumnTextForButtonValue = true;
+            // 
+            // Crediter
+            // 
+            this.Crediter.HeaderText = "Crediter";
+            this.Crediter.Name = "Crediter";
+            this.Crediter.Text = "Crediter";
+            this.Crediter.UseColumnTextForButtonValue = true;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Compte Courant",
-            "Compte Epargne",
-            "Compte Payant"});
+            "CompteCourant",
+            "CompteEpargne",
+            "comptePayant"});
             this.comboBox1.Location = new System.Drawing.Point(667, 67);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
@@ -110,20 +125,6 @@ namespace banqueInterface
             // compteBindingSource
             // 
             this.compteBindingSource.DataSource = typeof(appBanque.Compte);
-            // 
-            // DELETE
-            // 
-            this.DELETE.HeaderText = "Delete";
-            this.DELETE.Name = "DELETE";
-            this.DELETE.Text = "Delete";
-            this.DELETE.UseColumnTextForButtonValue = true;
-            // 
-            // Crediter
-            // 
-            this.Crediter.HeaderText = "Crediter";
-            this.Crediter.Name = "Crediter";
-            this.Crediter.Text = "Crediter";
-            this.Crediter.UseColumnTextForButtonValue = true;
             // 
             // UI_interface
             // 
